@@ -226,7 +226,7 @@
         
         <div class="contact-info">
             <div class="contact-method">
-                <h3 class="method-title">Email</h3>
+                <h3 class="method-title">E-mail</h3>
                 <a href="mailto:ilovgoth@proton.me" class="method-detail">ilovgoth@proton.me</a>
             </div>
             
@@ -244,40 +244,7 @@
     </footer>
     
     <script>
-        // Criar hexágonos animados para o fundo
-        document.addEventListener('DOMContentLoaded', function() {
-            const bg = document.getElementById('web3-bg');
-            const colors = ['rgba(247, 147, 26, 0.03)', 'rgba(247, 147, 26, 0.05)', 'rgba(247, 147, 26, 0.07)'];
-            
-            for (let i = 0; i < 15; i++) {
-                const hexagon = document.createElement('div');
-                hexagon.className = 'hexagon';
-                
-                // Posição aleatória
-                hexagon.style.left = Math.random() * 100 + 'vw';
-                hexagon.style.top = Math.random() * 100 + 'vh';
-                
-                // Tamanho aleatório
-                const size = 30 + Math.random() * 70;
-                hexagon.style.width = size + 'px';
-                hexagon.style.height = (size * 0.5774) + 'px';
-                
-                // Cores aleatórias
-                const color = colors[Math.floor(Math.random() * colors.length)];
-                hexagon.style.backgroundColor = color;
-                
-                if (hexagon.children) {
-                    hexagon.children[0].style.borderBottomColor = color;
-                    hexagon.children[1].style.borderTopColor = color;
-                }
-                
-                // Animação com duração aleatória
-                hexagon.style.animationDuration = (10 + Math.random() * 20) + 's';
-                hexagon.style.animationDelay = (Math.random() * 5) + 's';
-                
-                bg.appendChild(hexagon);
-            }
-        });
+        
     </script>
 </body>
 </html>
